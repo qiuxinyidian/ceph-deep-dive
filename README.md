@@ -5,6 +5,7 @@ Record various knowledge during the Ceph learning and research process, includin
 * Source Code Analysis
 * Operation and maintenance skills
 * Practice, application
+* Distributed-Storage Research
 
 
 
