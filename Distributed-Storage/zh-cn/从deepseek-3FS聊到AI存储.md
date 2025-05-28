@@ -36,7 +36,7 @@
 可以通过继承PyTorch自身的Dataset类，来实现灵活的数据读取。各个系统可以基于此实现数据与PyTorch的连接(Connector)。
 如下展示了整体框架图。其中如下的S3 Connector和FS-S3 Connector都是是AWS 开发的(详情可见aws-connector-for-pytorch)。适用于 PyTorch 的 Amazon S3 Connector for PyTorch 会自动优化 S3 读取和列出请求，以改善训练工作负载的数据加载和检查点性能，由于S3的通用性，所以支持S3的对象存储系统都可以直接使用 Amazon S3 Connector for PyTorch。Fs-S3 的话就是底层使用的是S3，然后可以通过文件系统导出，这也是目前比较流行的一类系统，这类系统兼具了fs和s3的优势。File-Store Connector是PyTorch默认支持的系统。除了这些，还有一些公有云自己的Connector。
 
-![一个例子](../../../image/pytorch-connector.png.png)
+![一个例子](../../../image/pytorch-connector.png)
 
 
 - AWS S3 Connector的使用实例
