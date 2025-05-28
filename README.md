@@ -2,7 +2,7 @@
 Record various knowledge during the Ceph learning and research process, including:
 
 * Architecture Analysis
-* Source Code Interpretation
+* Source Code Analysis
 * Operation and maintenance skills
 * Practice, application
 
