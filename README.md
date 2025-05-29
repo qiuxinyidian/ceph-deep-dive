@@ -8,6 +8,10 @@ Record various knowledge during the Ceph learning and research process, includin
 
 ![一个例子](./image/CephFS.png)
 
+* Bluestore
+
+![一个例子](./image/bluestore.png)
+
 ## [Source Code Analysis](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
   
 ## [Operation and maintenance skills](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
