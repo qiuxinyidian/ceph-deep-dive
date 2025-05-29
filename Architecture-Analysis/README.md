@@ -4,6 +4,6 @@
 
 ## Ceph-CSI
 
-- [Ceph Manager Module Designand Operation](https://static.sched.com/hosted_files/ceph2023/ef/CephCSI.pdf?_gl=1*13j926j*_gcl_au*MzQxODQ2MzMzLjE3NDcyOTEyMjg.*FPAU*MzQxODQ2MzMzLjE3NDcyOTEyMjg)
+- [Ceph-CSI:Bridging Containers and Ceph](https://static.sched.com/hosted_files/ceph2023/ef/CephCSI.pdf?_gl=1*13j926j*_gcl_au*MzQxODQ2MzMzLjE3NDcyOTEyMjg.*FPAU*MzQxODQ2MzMzLjE3NDcyOTEyMjg)
 
 
