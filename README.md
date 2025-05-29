@@ -4,7 +4,7 @@ Record various knowledge during the Ceph learning and research process, includin
 
 * [Architecture Analysis](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
 
-![一个例子](../../image/CephFS.png)
+![一个例子](./image/CephFS.png)
 
 * [Source Code Analysis](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
   
