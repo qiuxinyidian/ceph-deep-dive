@@ -20,7 +20,7 @@
   
 * [MGR](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
 * [Ceph-CSI](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
-* CephFS
+* [CephFS-MDS](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
 ![image.png|600](https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images20250530152434.png)
 
 
@@ -28,6 +28,8 @@
 
 Example As Follow, More See Above Link.
 
+* [BlueStore](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
+ 
 ![image.png|600](https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images20250530152522.png)
   
 ### 🛠️ [Operation and maintenance skills](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
