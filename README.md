@@ -38,7 +38,7 @@ Example As Follow, More See Above Link.
   
 ### 🛠️ [Operation and maintenance skills](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
   
-### 🛠️ [Practice, applicatio](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Application-Practice)
+### 🛠️ [Practice, application](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Application-Practice)
 
 ### 📖 [Resesrch For Ceph(papers & presentations)](https://github.com/wuhongsong/ceph-deep-dive/issues/7)
 
