@@ -13,14 +13,14 @@ Record various knowledge during the Ceph learning and research process, includin
   
 * CephFS-MDS
 
-![一个例子](./image/CephFS.png)
+![image.png|600](https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images20250530152434.png)
 
 
 ## [Source Code Analysis](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
 
 * Bluestore
 
-![一个例子](./image/bluestore.png)
+![image.png|600](https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images20250530152522.png)
   
 ## [Operation and maintenance skills](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
   
