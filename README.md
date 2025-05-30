@@ -18,8 +18,11 @@
 
 ### 🏗️ [Architecture Analysis](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
   
-* [MGR](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
 * [Ceph-CSI](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
+  
+  ![image](./image/csi.png)
+
+*  [MGR](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
 * [CephFS-MDS](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
 ![image.png|600](https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images20250530152434.png)
 
