@@ -1,3 +1,10 @@
+---
+title: "Ceph简介 "
+date: 2025-05-30T14:17:59+08:00
+draft: false
+tags: ["ceph"]
+categories: ["ceph"]
+---
 # ceph-deep-dive
 
 Record various knowledge during the Ceph learning and research process, including:
