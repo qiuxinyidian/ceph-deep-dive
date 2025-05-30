@@ -60,7 +60,7 @@ We warmly welcome community contributions! Whether it's:
 ### Content Guidelines
 - Articles should be in Markdown format
 - Code examples must include comments
-- Images should be placed in `assets/images/` directory
+- Images should be placed in `image/` directory
 - Follow technical writing best practices for clarity and consistency
 
 
