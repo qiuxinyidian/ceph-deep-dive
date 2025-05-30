@@ -13,9 +13,14 @@
 
 ### 🏗️ [架构分析](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
   
-示例如下，更多内容请查看上述链接。
-
+* [CephFS-MDS](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
 ![image.png|600](https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images20250530152434.png)
+
+* [Ceph-CSI](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
+  
+  ![image](./image/csi.png)
+
+*  [MGR](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
 
 ### 🔍 [源码分析](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
 
