@@ -1,5 +1,5 @@
 ---
-title: "Ceph简介 "
+title: "Ceph-deep-dive "
 date: 2025-05-26T14:17:59+08:00
 draft: false
 tags: ["ceph"]
