@@ -1,6 +1,6 @@
 ---
 title: "Ceph MGR && Ceph-CSI introduction "
-date: 2025-05-30T14:17:59+08:00
+date: 2025-05-28T14:17:59+08:00
 draft: false
 tags: ["ceph", "ceph-csi", "mgr"]
 categories: ["ceph"]
