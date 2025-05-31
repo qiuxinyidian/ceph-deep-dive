@@ -11,7 +11,7 @@
 
 ## 📖 主要内容
 
-### 🔍 Ceph 初学者指南
+### 🔍 Ceph初学指南
 
 [Beginner’s Guides](https://docs.ceph.com/en/latest/start/beginners-guide/)
 
