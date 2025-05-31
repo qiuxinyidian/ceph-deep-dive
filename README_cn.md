@@ -28,6 +28,20 @@
 
 *  [MGR](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
 
+### 🛠️ [实践 & 应用](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Application-Practice)
+
+####  💡 谁在使用Ceph？
+
+- [Cern](https://indico.cern.ch/event/1457076/attachments/2934445/5156641/Ceph,%20Storage%20for%20CERN%20Cloud.pdf)
+- [DigitalOcean](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/2024%20Ceph%20Day%20NYC%20How%20we%20Operate%20Ceph%20at%20Scale.pdf)
+- [45Drives](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/45Drives%20-Ceph%20Days%202024%20-%20FINAL.pdf)
+- [Bloomberg](https://static.sched.com/hosted_files/ceph2023/2e/Cephalocon%202023%20-%20multisite.pdf?_gl=1*4b8rzs*_gcl_au*MTk4MTIxMDc0NS4xNzI5NTYzMDEw*FPAU*MTk4MTIxMDc0NS4xNzI5NTYzMDEw)
+- ...More...Above Link...
+
+
+####  💡 Ceph 线上实践
+
+
 ### 🔍 [源码分析](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
 
 示例如下，更多内容请查看上述链接。
@@ -36,7 +50,6 @@
   
 ### 🛠️ [运维技巧](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
   
-### 🛠️ [实践应用](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Application-Practice)
 
 ### 📖 [Ceph研究(论文和演示文稿)](https://github.com/wuhongsong/ceph-deep-dive/issues/7)
 
