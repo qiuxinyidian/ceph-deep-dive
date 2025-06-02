@@ -64,22 +64,10 @@
 
 ## 🤝 贡献指南
 
-我们热烈欢迎社区贡献！无论是：
+我们热烈欢迎社区贡献! 
 
-- 📝 **架构知识**：分享您的Ceph架构设计、分布式存储见解和系统设计模式
-- 🔍 **源码分析**：贡献Ceph内部机制的深度分析、算法实现和代码解析
-- 🛠️ **运维实践**：分享您的Ceph部署经验、维护流程和生产环境故障排除
-- ⚡ **性能优化**：贡献调优指南、基准测试结果和可扩展性最佳实践
-- 🐛 **问题报告**：发现文档错误或技术问题
-- 💡 **改进建议**：提出更好的组织或内容想法
-- 🔧 **工具贡献**：分享您开发的Ceph相关监控、部署或调试工具
+[怎样贡献?](https://github.com/wuhongsong/ceph-deep-dive/blob/main/CONTRIBUTING.md)
 
-### 贡献流程
-1. Fork 这个仓库
-2. 创建功能分支：`git checkout -b feature/your-feature-name`
-3. 提交您的更改：`git commit -am 'Add some feature'`
-4. 推送到分支：`git push origin feature/your-feature-name`
-5. 提交 Pull Request
 
 ### 内容指南
 - 文章应采用Markdown格式
