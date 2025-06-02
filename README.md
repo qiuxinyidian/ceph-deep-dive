@@ -27,13 +27,10 @@
   
 * [CephFS-MDS](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
   
-  ![image](./image/CephFS.png)
-
 * [Ceph-CSI](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
   
-  ![image](./image/csi.png)
-
 *  [MGR](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
+*  others, add later, Your contributions are warmly welcome
 
   
 ### 🛠️ [Practice, application](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Application-Practice)
@@ -44,26 +41,39 @@
 - [DigitalOcean](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/2024%20Ceph%20Day%20NYC%20How%20we%20Operate%20Ceph%20at%20Scale.pdf)
 - [45Drives](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/45Drives%20-Ceph%20Days%202024%20-%20FINAL.pdf)
 - [Bloomberg](https://static.sched.com/hosted_files/ceph2023/2e/Cephalocon%202023%20-%20multisite.pdf?_gl=1*4b8rzs*_gcl_au*MTk4MTIxMDc0NS4xNzI5NTYzMDEw*FPAU*MTk4MTIxMDc0NS4xNzI5NTYzMDEw)
-- ...More...Above Link...
+- others, add later, Your contributions are warmly welcome
 
 
 ####  💡 Ceph Practice Online
 
 ### 🔍 [Source Code Analysis](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
 
-Example As Follow, More See Above Link.
 
 * [BlueStore](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
+
+🤝 others, add later, Your contributions are warmly welcome.
+
+* [CephFS-Kclient](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
+* [CephFS-MDS](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
+* [OSD](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
+* [Mon](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
+* [Mgr](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
+
+
  
-![image.png|600](https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images20250530152522.png)
   
 ### 🛠️ [Operation and maintenance skills](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
 
+- add later, Your contributions are warmly welcome
 
 ### 📖 [Resesrch For Ceph(papers & presentations)](https://github.com/wuhongsong/ceph-deep-dive/issues/7)
 
+- add later, Your contributions are warmly welcome
+
+
 ### 📖 [Distributed-Storage Research](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Distributed-Storage)
 
+- add later, Your contributions are warmly welcome
 
 ## 🤝 Contributing
 
@@ -84,11 +94,6 @@ We warmly welcome community contributions! Whether it's:
 4. Push to the branch: `git push origin feature/your-feature-name`
 5. Submit a Pull Request
 
-### Content Guidelines
-- Articles should be in Markdown format
-- Code examples must include comments
-- Images should be placed in `image/` directory
-- Follow technical writing best practices for clarity and consistency
 
 
 
@@ -98,21 +103,15 @@ We warmly welcome community contributions! Whether it's:
 - **Email Contact**: wojiaowugen@163.com
 
 
+## 💼 Job Opportunities
 
-## 🌟 Show Your Support
+Welcome recruiters and job seekers to share Ceph or distributed storage-related job openings and resumes here!
 
-If this project helps you, please consider:
-- ⭐ **Star this repository** to show your support
-- 🔄 **Share with your colleagues** and the community
-- 📢 **Follow for updates** to get the latest content
-- 🤝 **Contribute** your knowledge and expertise
+- 📌 [Job Openings](./jobs/job-openings.md)
+  
+  Recruiters, please click this link and post your job openings using the provided format.
 
----
+- 🙋‍♂️ [Job Seekers](./jobs/job-seekers.md)
 
-**Built with ❤️ by the distributed storage community**
-
-⭐ **Star us on GitHub — it motivates us a lot!**
-
-🔥 **Continuously updated - Watch this repository for the latest content!**
-
+  Job seekers, please click this link and introduce yourself using the provided format.
 
