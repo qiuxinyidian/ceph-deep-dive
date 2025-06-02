@@ -20,13 +20,11 @@
 ### 🏗️ [架构分析](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
   
 * [CephFS-MDS](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
-![image.png|600](https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images20250530152434.png)
 
 * [Ceph-CSI](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
   
-  ![image](./image/csi.png)
-
 *  [MGR](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
+*  更多稍后更新，非常欢迎您的贡献
 
 ### 🛠️ [实践 & 应用](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Application-Practice)
 
@@ -36,24 +34,33 @@
 - [DigitalOcean](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/2024%20Ceph%20Day%20NYC%20How%20we%20Operate%20Ceph%20at%20Scale.pdf)
 - [45Drives](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/45Drives%20-Ceph%20Days%202024%20-%20FINAL.pdf)
 - [Bloomberg](https://static.sched.com/hosted_files/ceph2023/2e/Cephalocon%202023%20-%20multisite.pdf?_gl=1*4b8rzs*_gcl_au*MTk4MTIxMDc0NS4xNzI5NTYzMDEw*FPAU*MTk4MTIxMDc0NS4xNzI5NTYzMDEw)
-- ...More...Above Link...
+-  更多稍后更新，非常欢迎您的贡献
+
 
 
 ####  💡 Ceph 线上实践
 
+-  更多稍后更新，非常欢迎您的贡献
+
+
 
 ### 🔍 [源码分析](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
 
-示例如下，更多内容请查看上述链接。
-
-![image.png|600](https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images20250530152522.png)
+- [BlueStore](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
+-  更多稍后更新，非常欢迎您的贡献
   
 ### 🛠️ [运维技巧](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
-  
+
+-  更多稍后更新，非常欢迎您的贡献
 
 ### 📖 [Ceph研究(论文和演示文稿)](https://github.com/wuhongsong/ceph-deep-dive/issues/7)
 
+-  更多稍后更新，非常欢迎您的贡献
+
 ### 📖 [分布式存储研究](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Distributed-Storage)
+
+-  更多稍后更新，非常欢迎您的贡献
+
 
 ## 🤝 贡献指南
 
@@ -85,18 +92,16 @@
 - **问题讨论**：[GitHub Issues](https://github.com/wuhongsong/ceph-deep-dive/issues)
 - **邮件联系**：wojiaowugen@163.com
 
-## 🌟 支持我们
 
-如果这个项目对您有帮助，请考虑：
-- ⭐ **为此仓库点星** 表示您的支持
-- 🔄 **与您的同事** 和社区分享
-- 📢 **关注更新** 获取最新内容
-- 🤝 **贡献** 您的知识和专业技能
+## 💼 工作机会
 
----
+欢迎招聘者和求职者在此发布 Ceph 或分布式存储相关的职位信息和求职信息！
 
-**由分布式存储社区用 ❤️ 构建**
+- 📌 [招聘信息](./job-openings-cn.md)
+  
+  招聘者请点击此链接，按照模板发布职位。  
 
-⭐ **在GitHub上给我们点星 — 这对我们是很大的鼓励！**
+- 🙋‍♂️ [求职信息](./job-seekers-cn.md)
+  
+  求职者请点击此链接，按照模板介绍自己。  
 
-🔥 **持续更新中 - 关注此仓库获取最新内容！**
