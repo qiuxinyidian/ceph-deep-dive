@@ -97,11 +97,11 @@
 
 欢迎招聘者和求职者在此发布 Ceph 或分布式存储相关的职位信息和求职信息！
 
-- 📌 [招聘信息](./job-openings-cn.md)
+- 📌 [招聘信息](./jobs/job-openings-cn.md)
   
   招聘者请点击此链接，按照模板发布职位。  
 
-- 🙋‍♂️ [求职信息](./job-seekers-cn.md)
+- 🙋‍♂️ [求职信息](./jobs/job-seekers-cn.md)
   
   求职者请点击此链接，按照模板介绍自己。  
 
