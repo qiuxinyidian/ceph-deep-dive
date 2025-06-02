@@ -69,11 +69,6 @@
 [怎样贡献?](https://github.com/wuhongsong/ceph-deep-dive/blob/main/CONTRIBUTING.md)
 
 
-### 内容指南
-- 文章应采用Markdown格式
-- 代码示例必须包含注释
-- 图片应放置在 `image/` 目录中
-- 遵循技术写作最佳实践，确保清晰性和一致性
 
 ## 📞 联系方式
 
