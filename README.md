@@ -99,7 +99,7 @@
 - [Practical Guide: A Summary of Commonly Used Tools in Ceph](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
 
 
-- add later, Your contributions are warmly welcome
+**more see above link**
 
 
 ## 🤝 Contributing
