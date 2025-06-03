@@ -88,15 +88,3 @@ We warmly welcome community contributions! Whether it's:
 - **Email Contact**: wojiaowugen@163.com
 
 
-## 💼 Job Opportunities
-
-Welcome recruiters and job seekers to share Ceph or distributed storage-related job openings and resumes here!
-
-- 📌 [Job Openings](./jobs/job-openings.md)
-  
-  Recruiters, please click this link and post your job openings using the provided format.
-
-- 🙋‍♂️ [Job Seekers](./jobs/job-seekers.md)
-
-  Job seekers, please click this link and introduce yourself using the provided format.
-
