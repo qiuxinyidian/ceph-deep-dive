@@ -40,7 +40,11 @@
 
 ####  💡 Ceph 线上实践
 
--  更多稍后更新，非常欢迎您的贡献
+- [Ceph集群灾难性恢复01 --- 我的osd,mds起不来啦](https://zhuanlan.zhihu.com/p/468220071)
+- [Ceph集群灾难性恢复02 --- cephfs文件系统只读(MDS in read-only mode)](https://zhuanlan.zhihu.com/p/231164499)
+
+
+**更多稍后更新，非常欢迎您的贡献**
 
 
 
@@ -81,9 +85,6 @@
 
 ### 📖 [分布式存储研究](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Distributed-Storage)
 
--  更多稍后更新，非常欢迎您的贡献
-  
-### 📖 [Distributed-Storage Research](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Distributed-Storage)
 
 [从deepseek-3FS聊到AI存储.md](https://github.com/wuhongsong/Ceph-Learn-Notes/blob/main/Distributed-Storage/zh-cn/%E4%BB%8Edeepseek-3FS%E8%81%8A%E5%88%B0AI%E5%AD%98%E5%82%A8.md)
 
