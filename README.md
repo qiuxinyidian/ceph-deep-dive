@@ -60,20 +60,44 @@
 * [Mgr](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
 
 
- 
+
+### 📖 [Resesrch For Ceph(papers & presentations)](https://github.com/wuhongsong/ceph-deep-dive/issues/7)
+
+#### papers
+
+- [File systems unfit as distributed storage backends: lessons from 10 years of Ceph evolution](https://dl.acm.org/doi/pdf/10.1145/3341301.3359656)
+- [Ceph: A Scalable, High-Performance Distributed File System](https://www.ssrc.ucsc.edu/Papers/weil-osdi06.pdf)
+
+
+#### presentations
+
+- [Asynchronous Directory Operations in CephFS](https://www.usenix.org/sites/default/files/conference/protected-files/vault20_slides_layton.pdf)
+
+
+#### references
+
+- [Ceph: A Journey to 1 TiB/s](https://ceph.io/en/news/blog/2024/ceph-a-journey-to-1tibps/)
+
+
+#### Blog
+
+- [IBM Storage Ceph](https://www.ibm.com/docs/en/storage-ceph/8.0.0)
+- [ceph_study](https://github.com/lidaohang/ceph_study)
+- [Awaresome About  Ceph & Distribute Storage](https://www.zhihu.com/column/c_1267088333848641536)
+
+**more see above link**
+
   
+### 📖 [Distributed-Storage Research](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Distributed-Storage)
+
+[From.deepseek-3FS.to.AI.Storage.md](https://github.com/wuhongsong/Ceph-Learn-Notes/blob/main/Distributed-Storage/en/From.deepseek-3FS.to.AI.Storage.md)
+
+**more see above link**
+
 ### 🛠️ [Operation and maintenance skills](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
 
 - add later, Your contributions are warmly welcome
 
-### 📖 [Resesrch For Ceph(papers & presentations)](https://github.com/wuhongsong/ceph-deep-dive/issues/7)
-
-- add later, Your contributions are warmly welcome
-
-
-### 📖 [Distributed-Storage Research](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Distributed-Storage)
-
-- add later, Your contributions are warmly welcome
 
 ## 🤝 Contributing
 
