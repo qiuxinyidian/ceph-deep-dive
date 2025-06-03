@@ -92,6 +92,9 @@
   
 ### 🛠️ [运维技巧](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
 
+- [实用指南：Ceph常用工具汇总](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Operation-Skills/zh-cn/%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97%EF%BC%9ACeph%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB.md)
+  
+
 **更多稍后更新，非常欢迎您的贡献**
 
 
