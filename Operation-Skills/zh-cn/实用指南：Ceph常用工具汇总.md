@@ -105,13 +105,10 @@ ceph osd crush remove osd.X                 # 从CRUSH map移除
 ceph auth del osd.X                         # 删除认证信息
 ceph osd rm X                               # 从集群移除
 
-# 添加新 OSD
-ceph-volume lvm create --data /dev/sdX
-ceph-volume lvm create --data /dev/sdX --block.wal /dev/nvme0n1p1
 
 # 替换故障 OSD
 ceph osd destroy X --yes-i-really-mean-it
-ceph osd new X
+
 
 # 重新权衡 OSD
 ceph osd reweight X 0.8                     # 临时权重调整
@@ -720,27 +717,7 @@ ceph daemon mds.<id> dirfrag ls <path>
 ceph daemon mds.<id> dirfrag split_info <path>
 ```
 
-#### CephFS 性能调优
-```bash
-# MDS 缓存调优
-ceph config set mds mds_cache_memory_limit 4294967296     # 4GB
-ceph config set mds mds_cache_reservation 0.05
-ceph config set mds mds_health_cache_threshold 1.5
 
-# 客户端缓存调优
-ceph config set client client_cache_size 134217728        # 128MB
-ceph config set client client_cache_mid 0.75
-ceph config set client fuse_default_permissions 0
-
-# 并发调优
-ceph config set mds mds_max_caps_per_client 1048576
-ceph config set mds mds_session_timeout 60
-ceph config set mds mds_session_autoclose 300
-
-# 目录分片调优
-ceph config set mds mds_bal_split_size 10000
-ceph config set mds mds_bal_merge_size 50
-```
 
 ### 13.3 OSD 性能分析
 
@@ -791,33 +768,6 @@ ceph daemon osd.<id> dump_recovery_reservations
 ceph daemon osd.<id> dump_backfill_reservations
 ```
 
-#### OSD 性能调优参数
-```bash
-# 队列深度调优
-ceph config set osd osd_op_queue mclock_scheduler
-ceph config set osd osd_op_queue_mclock_anticipation_timeout 0.0
-
-# 线程池调优
-ceph config set osd osd_op_threads 8
-ceph config set osd osd_disk_threads 1
-ceph config set osd osd_recovery_threads 1
-
-# 刷写调优
-ceph config set osd osd_max_write_size 90
-ceph config set osd osd_max_object_size 134217728
-ceph config set osd osd_client_message_size_cap 524288000
-
-# BlueStore 调优
-ceph config set osd bluestore_cache_size 3221225472       # 3GB
-ceph config set osd bluestore_cache_meta_ratio 0.4
-ceph config set osd bluestore_cache_kv_ratio 0.4
-ceph config set osd bluestore_min_alloc_size 4096
-
-# 恢复调优
-ceph config set osd osd_recovery_max_active 3
-ceph config set osd osd_max_backfills 1
-ceph config set osd osd_recovery_sleep 0.1
-```
 
 ### 13.4 整体集群性能分析
 
@@ -1040,41 +990,7 @@ rbd mirror image promote <pool>/<image>
 rbd mirror image demote <pool>/<image>
 ```
 
-### 14.4 网络和通信工具
 
-#### ceph-syn (同步测试工具)
-```bash
-# 测试文件系统同步
-ceph-syn -c /etc/ceph/ceph.conf --syn workload1
-
-# 自定义工作负载测试
-ceph-syn -c /etc/ceph/ceph.conf --makedir /test/dir
-ceph-syn -c /etc/ceph/ceph.conf --writefile /test/file 1048576
-
-# 元数据操作测试
-ceph-syn -c /etc/ceph/ceph.conf --mkdir /test
-ceph-syn -c /etc/ceph/ceph.conf --rmdir /test
-```
-
-#### ceph-detect-init (初始化系统检测)
-```bash
-# 检测初始化系统
-ceph-detect-init
-
-# 检测系统信息
-ceph-detect-init --verbose
-```
-
-### 14.5 日志和调试工具
-
-#### ceph-post-file (日志上传工具)
-```bash
-# 上传日志文件进行分析
-ceph-post-file /var/log/ceph/ceph-osd.0.log
-
-# 上传带描述的日志
-ceph-post-file -d "OSD crash investigation" /var/log/ceph/ceph-osd.0.log
-```
 
 #### ceph-crash (崩溃报告工具)
 ```bash
@@ -1137,25 +1053,9 @@ tail -f /var/log/ceph/ceph.log | grep -i error
 tail -f /var/log/ceph/ceph-osd.*.log | grep -i slow
 ```
 
-### 15.2 网络诊断
-```bash
-# 测试 OSD 之间连通性
-ceph osd bench <osd-id> <bytes> <write|seq|rand>
 
-# 查看网络连接
-ceph daemon osd.<id> dump_ops_in_flight
-ceph daemon osd.<id> dump_blocked_ops
 
-# 检查集群网络
-ceph features
-ceph daemon osd.<id> dump_mempools
-
-# 网络延迟测试
-ping -c 10 <osd-node-ip>
-iperf3 -c <osd-node-ip> -t 10
-```
-
-### 15.3 常见问题排查
+### 15.2 常见问题排查
 ```bash
 # PG 不一致问题
 ceph health detail | grep inconsistent
@@ -1242,296 +1142,7 @@ rbd import /backup/image_backup.raw <pool>/<new-image>
 rbd import-diff /backup/diff.raw <pool>/<image>
 ```
 
----
-
-## 📊 17. 运维脚本集合
-
-### 17.1 集群健康检查脚本
-```bash
-#!/bin/bash
-# cluster_health_check.sh
-# Ceph 集群健康检查脚本
-
-LOG_FILE="/var/log/ceph_health_check.log"
-DATE=$(date '+%Y-%m-%d %H:%M:%S')
-
-echo "=== Ceph Cluster Health Report ===" | tee -a $LOG_FILE
-echo "Date: $DATE" | tee -a $LOG_FILE
-echo
-
-echo "1. Cluster Status:" | tee -a $LOG_FILE
-ceph -s | tee -a $LOG_FILE
-echo
-
-echo "2. Health Details:" | tee -a $LOG_FILE
-ceph health detail | tee -a $LOG_FILE
-echo
-
-echo "3. OSD Status:" | tee -a $LOG_FILE
-ceph osd tree | grep -E "(osd\.|down|out)" | tee -a $LOG_FILE
-echo
-
-echo "4. PG Status:" | tee -a $LOG_FILE
-ceph pg stat | tee -a $LOG_FILE
-ceph health detail | grep -i pg | tee -a $LOG_FILE
-echo
-
-echo "5. Performance:" | tee -a $LOG_FILE
-ceph iostat | head -5 | tee -a $LOG_FILE
-echo
-
-echo "6. Disk Usage:" | tee -a $LOG_FILE
-ceph df | head -10 | tee -a $LOG_FILE
-echo
-
-echo "7. Slow Operations:" | tee -a $LOG_FILE
-SLOW_OPS=$(ceph health detail | grep -c "slow ops")
-echo "Slow operations count: $SLOW_OPS" | tee -a $LOG_FILE
-
-if [ $SLOW_OPS -gt 0 ]; then
-    echo "OSDs with slow operations:" | tee -a $LOG_FILE
-    ceph health detail | grep "slow ops" | tee -a $LOG_FILE
-fi
-echo
-
-echo "Health check completed at: $(date)" | tee -a $LOG_FILE
-echo "========================================" | tee -a $LOG_FILE
-```
-
-### 17.2 性能监控脚本
-```bash
-#!/bin/bash
-# performance_monitor.sh
-# Ceph 性能监控脚本
-
-LOG_FILE="/var/log/ceph_performance.log"
-INTERVAL=30
-
-while true; do
-    timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-    
-    # 获取集群 I/O 统计
-    iostat=$(ceph iostat | grep -E "client|recovery" | tr '\n' ' ')
-    
-    # 获取慢操作统计
-    slow_ops=$(ceph health detail | grep -c "slow ops")
-    
-    # 获取 PG 状态
-    pg_stats=$(ceph pg stat | grep "pgs:" | awk '{print $2 " " $3}')
-    
-    # 获取集群利用率
-    cluster_usage=$(ceph df | grep "TOTAL" | awk '{print $6}')
-    
-    # 记录到日志
-    echo "$timestamp - I/O: $iostat - Slow Ops: $slow_ops - PGs: $pg_stats - Usage: $cluster_usage" >> $LOG_FILE
-    
-    # 检查是否需要报警
-    if [ $slow_ops -gt 10 ]; then
-        echo "$timestamp - ALERT: High slow operations count: $slow_ops" >> $LOG_FILE
-    fi
-    
-    sleep $INTERVAL
-done
-```
-
-### 17.3 自动化维护脚本
-```bash
-#!/bin/bash
-# auto_maintenance.sh
-# Ceph 自动化维护脚本
-
-LOG_FILE="/var/log/ceph_maintenance.log"
-DATE=$(date '+%Y-%m-%d %H:%M:%S')
-
-echo "$DATE - Starting maintenance tasks" >> $LOG_FILE
-
-# 1. 定期清理陈旧的 PG 日志
-echo "$DATE - Compacting OSD logs" >> $LOG_FILE
-ceph tell osd.* compact 2>&1 >> $LOG_FILE
-
-# 2. 检查并修复不一致的 PG
-echo "$DATE - Checking for inconsistent PGs" >> $LOG_FILE
-INCONSISTENT_PGS=$(ceph pg dump | grep inconsistent | awk '{print $1}')
-
-if [ ! -z "$INCONSISTENT_PGS" ]; then
-    echo "$DATE - Found inconsistent PGs: $INCONSISTENT_PGS" >> $LOG_FILE
-    for pg in $INCONSISTENT_PGS; do
-        echo "$DATE - Repairing PG: $pg" >> $LOG_FILE
-        ceph pg repair $pg 2>&1 >> $LOG_FILE
-        sleep 60
-    done
-else
-    echo "$DATE - No inconsistent PGs found" >> $LOG_FILE
-fi
-
-# 3. 清理崩溃报告（保留最近30天）
-echo "$DATE - Cleaning old crash reports" >> $LOG_FILE
-CRASH_COUNT=$(ceph crash ls | wc -l)
-if [ $CRASH_COUNT -gt 100 ]; then
-    ceph crash archive-all 2>&1 >> $LOG_FILE
-    echo "$DATE - Archived $CRASH_COUNT crash reports" >> $LOG_FILE
-fi
-
-# 4. 检查磁盘使用率
-echo "$DATE - Checking disk usage" >> $LOG_FILE
-HIGH_USAGE_OSDS=$(ceph osd df | awk '$6 > 85 {print $1 " " $6}')
-if [ ! -z "$HIGH_USAGE_OSDS" ]; then
-    echo "$DATE - WARNING: High disk usage OSDs:" >> $LOG_FILE
-    echo "$HIGH_USAGE_OSDS" >> $LOG_FILE
-fi
-
-echo "$DATE - Maintenance tasks completed" >> $LOG_FILE
-```
-
-### 17.4 备份脚本
-```bash
-#!/bin/bash
-# ceph_backup.sh
-# Ceph 配置和元数据备份脚本
-
-BACKUP_DIR="/backup/ceph/$(date +%Y%m%d)"
-mkdir -p $BACKUP_DIR
-
-echo "Starting Ceph backup to $BACKUP_DIR"
-
-# 备份集群配置
-echo "Backing up cluster configuration..."
-cp /etc/ceph/ceph.conf $BACKUP_DIR/
-cp /etc/ceph/*.keyring $BACKUP_DIR/
-
-# 导出各种映射
-echo "Exporting cluster maps..."
-ceph mon getmap -o $BACKUP_DIR/monmap.bin
-ceph osd getmap -o $BACKUP_DIR/osdmap.bin
-ceph osd getcrushmap -o $BACKUP_DIR/crushmap.bin
-
-# 备份认证信息
-echo "Backing up authentication data..."
-ceph auth export > $BACKUP_DIR/ceph_auth.txt
-
-# 备份存储池信息
-echo "Backing up pool information..."
-ceph osd pool ls detail > $BACKUP_DIR/pools.txt
-ceph pg dump > $BACKUP_DIR/pg_dump.txt
-
-# 备份集群状态
-echo "Backing up cluster status..."
-ceph -s > $BACKUP_DIR/cluster_status.txt
-ceph health detail > $BACKUP_DIR/health_detail.txt
-ceph osd tree > $BACKUP_DIR/osd_tree.txt
-
-# 创建备份清单
-echo "Creating backup manifest..."
-ls -la $BACKUP_DIR > $BACKUP_DIR/backup_manifest.txt
-
-echo "Backup completed successfully to $BACKUP_DIR"
-
-# 清理旧备份（保留7天）
-find /backup/ceph -type d -mtime +7 -exec rm -rf {} \; 2>/dev/null
-```
-
-### 17.5 故障恢复脚本
-```bash
-#!/bin/bash
-# emergency_recovery.sh
-# Ceph 紧急恢复脚本
-
-LOG_FILE="/var/log/ceph_emergency_recovery.log"
-DATE=$(date '+%Y-%m-%d %H:%M:%S')
-
-echo "$DATE - Emergency recovery script started" >> $LOG_FILE
-
-# 检查集群健康状态
-HEALTH=$(ceph health)
-echo "$DATE - Cluster health: $HEALTH" >> $LOG_FILE
-
-if [[ $HEALTH == "HEALTH_ERR" ]]; then
-    echo "$DATE - Cluster in ERROR state, attempting recovery" >> $LOG_FILE
-    
-    # 尝试修复所有不一致的 PG
-    INCONSISTENT_PGS=$(ceph health detail | grep "inconsistent" | awk '{print $2}' | cut -d. -f1-2)
-    
-    for pg in $INCONSISTENT_PGS; do
-        echo "$DATE - Attempting to repair PG $pg" >> $LOG_FILE
-        ceph pg repair $pg 2>&1 >> $LOG_FILE
-        sleep 30
-    done
-    
-    # 检查并处理 down 的 OSD
-    DOWN_OSDS=$(ceph osd tree | grep "down" | awk '{print $4}')
-    
-    for osd in $DOWN_OSDS; do
-        echo "$DATE - Attempting to restart OSD $osd" >> $LOG_FILE
-        systemctl restart ceph-osd@$osd 2>&1 >> $LOG_FILE
-        sleep 10
-    done
-    
-    # 强制进行 scrub
-    echo "$DATE - Forcing scrub on all PGs" >> $LOG_FILE
-    ceph pg scrub $(ceph pg ls | grep active | awk '{print $1}' | head -10) 2>&1 >> $LOG_FILE
-    
-elif [[ $HEALTH == "HEALTH_WARN" ]]; then
-    echo "$DATE - Cluster in WARN state, checking details" >> $LOG_FILE
-    ceph health detail >> $LOG_FILE
-    
-    # 处理常见警告
-    SLOW_OPS=$(ceph health detail | grep -c "slow ops")
-    if [ $SLOW_OPS -gt 0 ]; then
-        echo "$DATE - Found slow operations, checking affected OSDs" >> $LOG_FILE
-        ceph health detail | grep "slow ops" >> $LOG_FILE
-    fi
-fi
-
-echo "$DATE - Emergency recovery script completed" >> $LOG_FILE
-```
-
----
-
-## 💡 最佳实践和技巧
-
-### 日常运维检查清单
-```bash
-# 每日检查
-1. ceph -s                    # 集群整体状态
-2. ceph health detail         # 健康详情
-3. ceph df                    # 存储使用情况
-4. ceph osd df                # OSD使用情况
-5. 检查服务状态 systemctl status ceph-*
-
-# 每周检查
-1. ceph pg dump_stuck         # 卡住的PG
-2. ceph osd perf              # OSD性能
-3. 日志检查 journalctl -u ceph-*
-4. 磁盘健康检查 smartctl
-5. 网络连通性测试
-
-# 每月检查
-1. ceph versions              # 版本一致性
-2. crush map 优化检查
-3. 性能基准测试
-4. 备份验证
-5. 容量规划评估
-```
-
-### 性能优化快速配置
-```bash
-# OSD 性能优化
-ceph config set osd bluestore_cache_size 2147483648    # 2GB
-ceph config set osd osd_memory_target 4294967296       # 4GB
-ceph config set osd osd_op_threads 8
-ceph config set osd osd_max_backfills 1
-
-# 客户端优化
-ceph config set client rbd_cache true
-ceph config set client rbd_cache_size 67108864         # 64MB
-
-# 恢复优化
-ceph config set global osd_recovery_max_active 1
-ceph config set global osd_recovery_sleep 0.1
-```
-
----
 
 **本文档持续更新，建议定期检查最新版本。如有任何问题或建议，欢迎反馈。**
 
-*最后更新时间：2024年12月*
+*最后更新时间：2025年06月*
