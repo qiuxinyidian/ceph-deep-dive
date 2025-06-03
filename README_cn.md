@@ -42,9 +42,7 @@
 
 - [Ceph集群灾难性恢复01 --- 我的osd,mds起不来啦](https://zhuanlan.zhihu.com/p/468220071)
 - [Ceph集群灾难性恢复02 --- cephfs文件系统只读(MDS in read-only mode)](https://zhuanlan.zhihu.com/p/231164499)
-
-
-**更多稍后更新，非常欢迎您的贡献**
+- 更多稍后更新，非常欢迎您的贡献
 
 
 
