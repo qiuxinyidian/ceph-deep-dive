@@ -18,9 +18,9 @@
 
 ### 🔍 Ceph Beginner’s Guide
 
-[Beginner’s Guides](https://docs.ceph.com/en/latest/start/beginners-guide/)
+* [Beginner’s Guides](https://docs.ceph.com/en/latest/start/beginners-guide/)
 
-[IBM Storage Ceph for Beginners](https://community.ibm.com/community/user/viewdocument/ibm-storage-ceph-for-beginners?CommunityKey=1142f81e-95e4-4381-95d0-7977f20d53fa&tab=librarydocuments)
+* [IBM Storage Ceph for Beginners](https://community.ibm.com/community/user/viewdocument/ibm-storage-ceph-for-beginners?CommunityKey=1142f81e-95e4-4381-95d0-7977f20d53fa&tab=librarydocuments)
 
 
 ### 🏗️ [Architecture Analysis](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
