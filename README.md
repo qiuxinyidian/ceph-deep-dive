@@ -113,5 +113,6 @@ We warmly welcome community contributions! Whether it's:
 
 - **Issue Discussions**: [GitHub Issues](https://github.com/wuhongsong/ceph-deep-dive/issues)
 - **Email Contact**: wojiaowugen@163.com
+- **Wechat**: wojiaowugen
 
 
