@@ -109,7 +109,8 @@
 ## 📞 联系方式
 
 - **问题讨论**：[GitHub Issues](https://github.com/wuhongsong/ceph-deep-dive/issues)
-- **邮件联系**：wojiaowugen@163.com
+- **邮件**：wojiaowugen@163.com
+- **微信**：wojiaowugen
 
 
 
