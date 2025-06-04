@@ -791,11 +791,7 @@ done
 # 集群延迟分析
 ceph osd perf | grep -E "apply_latency|commit_latency"
 
-# 网络延迟检查
-for osd in $(ceph osd ls); do
-    echo "OSD $osd latency:"
-    ceph daemon osd.$osd dump_slow_requests | head -5
-done
+
 ```
 
 ---
