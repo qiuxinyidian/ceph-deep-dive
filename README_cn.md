@@ -100,6 +100,7 @@
 
 **更多稍后更新，非常欢迎您的贡献**
 
+------
 
 ## 🤝 贡献指南
 
@@ -116,4 +117,15 @@
 - **微信**：wojiaowugen
 
 
+------
+<!-- Copy-paste in your Readme.md file -->
+
+<a href="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map?repo_id=991781952&activity=stars" target="_blank" style="display: block" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=991781952&activity=stars&image_size=auto&color_scheme=dark" width="721" height="auto">
+    <img alt="Star Geographical Distribution of wuhongsong/ceph-deep-dive" src="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=991781952&activity=stars&image_size=auto&color_scheme=light" width="721" height="auto">
+  </picture>
+</a>
+
+<!-- Made with [OSS Insight](https://ossinsight.io/) -->
 
