@@ -2,7 +2,7 @@
 ## CephFS-MDS
 
 
-- [CephFS-元数据引擎架构解析](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Architecture-Analysis/zh-cn/Ceph%20MDS%20(Metadata%20Server)%20%E6%9E%B6%E6%9E%84%E8%A7%A3%E6%9E%90.md)
+- [CephFS-MDS System Architecture Overview](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Architecture-Analysis/en/CephFS-MDS%20System%20Architecture%20Overview.md)
 
 ## MGR
 
