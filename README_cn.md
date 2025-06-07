@@ -33,13 +33,20 @@
 
 ####  💡 谁在使用Ceph？
 
-- [Cern](https://indico.cern.ch/event/1457076/attachments/2934445/5156641/Ceph,%20Storage%20for%20CERN%20Cloud.pdf)
+- [索尼](https://static.sched.com/hosted_files/ceph2024/9f/Cephalocon2024-Ceph_as_a_platform.pdf?_gl=1*4dvljn*_gcl_au*MTk4MTIxMDc0NS4xNzI5NTYzMDEw*FPAU*MTk4MTIxMDc0NS4xNzI5NTYzMDEw)
+- [欧洲原子核能研究中心](https://indico.cern.ch/event/1457076/attachments/2934445/5156641/Ceph,%20Storage%20for%20CERN%20Cloud.pdf)
 - [DigitalOcean](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/2024%20Ceph%20Day%20NYC%20How%20we%20Operate%20Ceph%20at%20Scale.pdf)
 - [45Drives](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/45Drives%20-Ceph%20Days%202024%20-%20FINAL.pdf)
-- [Bloomberg](https://static.sched.com/hosted_files/ceph2023/2e/Cephalocon%202023%20-%20multisite.pdf?_gl=1*4b8rzs*_gcl_au*MTk4MTIxMDc0NS4xNzI5NTYzMDEw*FPAU*MTk4MTIxMDc0NS4xNzI5NTYzMDEw)
+- [彭博社](https://static.sched.com/hosted_files/ceph2023/2e/Cephalocon%202023%20-%20multisite.pdf?_gl=1*4b8rzs*_gcl_au*MTk4MTIxMDc0NS4xNzI5NTYzMDEw*FPAU*MTk4MTIxMDc0NS4xNzI5NTYzMDEw)
 -  更多稍后更新，非常欢迎您的贡献
 
+####  🛠️ 性能优化
 
+* [1 TiB/s的Ceph性能之旅](https://ceph.io/en/news/blog/2024/ceph-a-journey-to-1tibps/)
+
+* [ceph rbd tune](https://www.intel.com/content/www/us/en/developer/articles/technical/performance-tuning-of-ceph-rbd.html)
+
+* [全闪存Ceph系统性能优化](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/Ceph%20Days%20NYC%202024%20-%20Designing%20and%20Tuning%20for%20All-Flash%20Ceph%20RBD%20Storage.pdfl)
 
 ####  💡 Ceph 线上实践
 
