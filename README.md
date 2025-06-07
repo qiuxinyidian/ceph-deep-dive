@@ -55,9 +55,15 @@
 
 * [Designing and Tuning for All-Flash Ceph RBD Storage](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/Ceph%20Days%20NYC%202024%20-%20Designing%20and%20Tuning%20for%20All-Flash%20Ceph%20RBD%20Storage.pdfl)
   
+#### 🛠️ [Operation and maintenance skills](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
+
+- [Practical Guide: A Summary of Commonly Used Tools in Ceph](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
 
 
 ####  💡 Ceph Practice Online
+
+
+**more see above link**
 
 ### 🔍 [Source Code Analysis](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Code-Analysis)
 
@@ -109,12 +115,6 @@ linux kernel docs[](https://lwn.net/Kernel/Index/)
 
 **more see above link**
 
-### 🛠️ [Operation and maintenance skills](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
-
-- [Practical Guide: A Summary of Commonly Used Tools in Ceph](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
-
-
-**more see above link**
 
 
 ## 🤝 Contributing
