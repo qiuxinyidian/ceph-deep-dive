@@ -72,30 +72,13 @@
 ### 📖 [Ceph研究(论文和演示文稿)](https://github.com/wuhongsong/ceph-deep-dive/issues/7)
 
 
-
-#### 论文
-
 - [File systems unfit as distributed storage backends: lessons from 10 years of Ceph evolution](https://dl.acm.org/doi/pdf/10.1145/3341301.3359656)
-- [Ceph: A Scalable, High-Performance Distributed File System](https://www.ssrc.ucsc.edu/Papers/weil-osdi06.pdf)
-
-
-#### PPT
-
-- [Asynchronous Directory Operations in CephFS](https://www.usenix.org/sites/default/files/conference/protected-files/vault20_slides_layton.pdf)
-
-
-#### 专家文档
-
 - [Ceph: A Journey to 1 TiB/s](https://ceph.io/en/news/blog/2024/ceph-a-journey-to-1tibps/)
-
-
-#### 博客
-
 - [IBM Storage Ceph](https://www.ibm.com/docs/en/storage-ceph/8.0.0)
 - [ceph_study](https://github.com/lidaohang/ceph_study)
-- [Awaresome About  Ceph & Distribute Storage](https://www.zhihu.com/column/c_1267088333848641536)
 
-**更多稍后更新，非常欢迎您的贡献**
+
+**更多请点击上面链接**
 
 
 ### 📖 [分布式存储研究](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Distributed-Storage)
@@ -103,6 +86,7 @@
 
 - [从deepseek-3FS聊到AI存储](https://github.com/wuhongsong/Ceph-Learn-Notes/blob/main/Distributed-Storage/zh-cn/%E4%BB%8Edeepseek-3FS%E8%81%8A%E5%88%B0AI%E5%AD%98%E5%82%A8.md)
 - [linux内核文档大全](https://lwn.net/Kernel/Index/)
+- 典型分布式存储系统对比：Ceph vs. JuiceFS vs. Alluxio vs. CubeFS vs Daos vs. ?
 
 
 **更多稍后更新，非常欢迎您的贡献**
