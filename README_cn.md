@@ -48,7 +48,7 @@
 
 * [全闪存Ceph系统性能优化](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/Ceph%20Days%20NYC%202024%20-%20Designing%20and%20Tuning%20for%20All-Flash%20Ceph%20RBD%20Storage.pdfl)
 
-* [知乎专栏：Ceph性能瓶颈分析与优化系列N]([https://ceph.io/en/news/blog/2024/ceph-a-journey-to-1tibps/](https://zhuanlan.zhihu.com/p/375442336
+* [知乎专栏：Ceph性能瓶颈分析与优化系列N](https://zhuanlan.zhihu.com/p/375442336)
   
 ####  💡 Ceph 线上实践
 
