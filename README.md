@@ -44,7 +44,17 @@
 - [DigitalOcean](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/2024%20Ceph%20Day%20NYC%20How%20we%20Operate%20Ceph%20at%20Scale.pdf)
 - [45Drives](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/45Drives%20-Ceph%20Days%202024%20-%20FINAL.pdf)
 - [Bloomberg](https://static.sched.com/hosted_files/ceph2023/2e/Cephalocon%202023%20-%20multisite.pdf?_gl=1*4b8rzs*_gcl_au*MTk4MTIxMDc0NS4xNzI5NTYzMDEw*FPAU*MTk4MTIxMDc0NS4xNzI5NTYzMDEw)
+- [sony](https://static.sched.com/hosted_files/ceph2024/9f/Cephalocon2024-Ceph_as_a_platform.pdf?_gl=1*4dvljn*_gcl_au*MTk4MTIxMDc0NS4xNzI5NTYzMDEw*FPAU*MTk4MTIxMDc0NS4xNzI5NTYzMDEw)
 - others, add later, Your contributions are warmly welcome
+
+####  🛠️ performance tune
+
+* [Ceph: A Journey to 1 TiB/s](https://ceph.io/en/news/blog/2024/ceph-a-journey-to-1tibps/)
+
+* [performance tuning of ceph rbd](https://www.intel.com/content/www/us/en/developer/articles/technical/performance-tuning-of-ceph-rbd.html)
+
+* [Designing and Tuning for All-Flash Ceph RBD Storage](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/Ceph%20Days%20NYC%202024%20-%20Designing%20and%20Tuning%20for%20All-Flash%20Ceph%20RBD%20Storage.pdfl)
+  
 
 
 ####  💡 Ceph Practice Online
