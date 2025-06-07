@@ -82,27 +82,9 @@
 
 ### 📖 [Resesrch For Ceph(papers & presentations)](https://github.com/wuhongsong/ceph-deep-dive/issues/7)
 
-#### papers
-
 - [File systems unfit as distributed storage backends: lessons from 10 years of Ceph evolution](https://dl.acm.org/doi/pdf/10.1145/3341301.3359656)
-- [Ceph: A Scalable, High-Performance Distributed File System](https://www.ssrc.ucsc.edu/Papers/weil-osdi06.pdf)
-
-
-#### presentations
-
-- [Asynchronous Directory Operations in CephFS](https://www.usenix.org/sites/default/files/conference/protected-files/vault20_slides_layton.pdf)
-
-
-#### references
-
 - [Ceph: A Journey to 1 TiB/s](https://ceph.io/en/news/blog/2024/ceph-a-journey-to-1tibps/)
-
-
-#### Blog
-
 - [IBM Storage Ceph](https://www.ibm.com/docs/en/storage-ceph/8.0.0)
-- [ceph_study](https://github.com/lidaohang/ceph_study)
-- [Awaresome About  Ceph & Distribute Storage](https://www.zhihu.com/column/c_1267088333848641536)
 
 **more see above link**
 
