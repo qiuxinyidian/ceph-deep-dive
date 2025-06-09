@@ -13,7 +13,7 @@ Ceph 集群中 IO commit latency 统计跳变问题排查
 
 验证与结论
 检查了机器上的 ntp 回拨记录，确实在跳变的时候机器时间回拨了 4ms。
-(https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images/20250608172359.png)
+![](https://raw.githubusercontent.com/YLShiJustFly/picturebed/main/images/20250608172359.png)
  
 于是接着做了个试验，在测试集群 rbd 上跑fio，随后把时间回调了 1ms，统计 latency 果然发生了跳变。
 ![](https://popofp.vipfp.ps.netease.com/file/684162b6d5dbab9ee1d1d45251JL0trO01)
