@@ -57,6 +57,8 @@
   
 #### 🛠️ [Operation and maintenance skills](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
 
+- [useful scripts from 45drives](https://scripts.45drives.com/)
+
 - [Practical Guide: A Summary of Commonly Used Tools in Ceph](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
 
 
