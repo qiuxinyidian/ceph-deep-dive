@@ -95,7 +95,7 @@
 ### 📖 [Distributed-Storage Research](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Distributed-Storage)
 
 * [From.deepseek-3FS.to.AI.Storage](https://github.com/wuhongsong/Ceph-Learn-Notes/blob/main/Distributed-Storage/en/From.deepseek-3FS.to.AI.Storage.md)
-linux kernel docs[](https://lwn.net/Kernel/Index/)
+* [linux kernel docs](https://lwn.net/Kernel/Index/)
 
 * Ceph vs. JuiceFS vs. Alluxio vs. CubeFS vs Daos vs. ?
 
