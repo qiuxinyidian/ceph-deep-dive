@@ -19,15 +19,16 @@
 
 ### 🏗️ [架构分析](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
   
-* [Ceph Mon架构解析](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Architecture-Analysis/zh-cn/Ceph%20Mon%E6%9E%B6%E6%9E%84%E8%A7%A3%E6%9E%90.md)
-
+* [OSD架构解析](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Architecture-Analysis/zh-cn/OSD.md)
 
 * [CephFS-MDS架构解析](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Architecture-Analysis/zh-cn/Ceph%20MDS%20(Metadata%20Server)%20%E6%9E%B6%E6%9E%84%E8%A7%A3%E6%9E%90.md)
+
+* [CMon架构解析](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Architecture-Analysis/zh-cn/Ceph%20Mon%E6%9E%B6%E6%9E%84%E8%A7%A3%E6%9E%90.md)
+
 
 * [Ceph-CSI](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
   
 *  [MGR](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
-*  更多稍后更新，非常欢迎您的贡献
 
 ### 🛠️ [实践 & 应用](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Application-Practice)
 
