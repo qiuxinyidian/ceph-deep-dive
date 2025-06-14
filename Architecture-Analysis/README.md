@@ -8,7 +8,7 @@
 ## OSD
 
 
-- [OSD System Architecture Overview]([https://github.com/wuhongsong/ceph-deep-dive/blob/main/Architecture-Analysis/en/CephFS-MDS%20System%20Architecture%20Overview.md](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Architecture-Analysis/zh-cn/OSD.md))
+- [OSD System Architecture Overview](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Architecture-Analysis/zh-cn/OSD.md))
 
 
 
