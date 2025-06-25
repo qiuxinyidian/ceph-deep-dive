@@ -4,7 +4,8 @@
 
 Having seen the DAOS project dominating the IO500 rankings, I've been keeping an eye on this project (though not diving deep into it).
 
-![IO500](https://path-to-io500-image)
+![image.png|IO500](../../image/io500.png)
+
 
 ## Background
 
@@ -19,7 +20,7 @@ The discontinuation of Optane did have a significant impact on DAOS, especially 
 - **Introduction of Write-Ahead Logging (WAL)**: Writing logs to DRAM and syncing to NVMe SSDs to replace the low-latency persistence path that originally relied on PMem
 - **Continuous optimization of NVMe access paths**: Maintaining high IOPS and low latency even in environments without Optane
 
-![DAOS Architecture Changes](https://path-to-architecture-image)
+![image.png|IO500](../../image/daos01.png)
 
 ## The Power of Open Source Community: From Intel Dominance to Foundation Governance
 
@@ -33,15 +34,12 @@ This transformation means:
 
 ### Open Source Metrics: DAOS vs. Ceph
 
-| Metric | DAOS | Ceph |
-|--------|------|------|
-| Stars | ![star & commits & issues](https://path-to-comparison-image) | - |
-| Commits | - | - |
-| Issues | - | - |
 
-### Major Development Companies
+![image.png|IO500](../../image/star.png)
 
-![Major Development Companies](https://path-to-companies-image)
+
+![image.png|IO500](../../image/company.png)
+
 
 ## Looking Forward: Version 2.8 and 3.0 Roadmap
 
@@ -52,7 +50,7 @@ According to the latest release information:
 - **DAOS 2.8** (end of 2025): This is the first release version transitioning from Intel dominance to community leadership, continuing to enhance NVMe adaptation, metadata engine, and K8s cloud-native support
 - **DAOS 3.0** (expected 2026): Will bring more thorough modular design, strengthening integration with AI and container ecosystems
 
-![DAOS Roadmap](https://path-to-roadmap-image)
+![image.png|IO500](../../image/roadmap.png)
 
 ## Typical DAOS User Cases
 
