@@ -87,6 +87,8 @@
 
 - [从deepseek-3FS聊到AI存储](https://github.com/wuhongsong/Ceph-Learn-Notes/blob/main/Distributed-Storage/zh-cn/%E4%BB%8Edeepseek-3FS%E8%81%8A%E5%88%B0AI%E5%AD%98%E5%82%A8.md)
 - [linux内核文档大全](https://lwn.net/Kernel/Index/)
+- [分布式存储DAOS：后Optane时代的转型之路](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Distributed-Storage/zh-cn/DAOS%20File%20System:%20Phoenix%20Rising%20After%20Optane's%20End.md)
+
 - 典型分布式存储系统对比：Ceph vs. JuiceFS vs. Alluxio vs. CubeFS vs Daos vs. ?
 
 
