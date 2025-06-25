@@ -43,7 +43,9 @@
 
 ####  🛠️ 性能优化
 
+* [Ceph Tentacle版本纠删码增强](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Distributed-Storage/zh-cn/Ceph%20Tentacle%E7%89%88%E6%9C%AC%E7%BA%A0%E5%88%A0%E7%A0%81%E5%A2%9E%E5%BC%BA.md)
 * [1 TiB/s的Ceph性能之旅](https://ceph.io/en/news/blog/2024/ceph-a-journey-to-1tibps/)
+
 
 * [ceph rbd tune](https://www.intel.com/content/www/us/en/developer/articles/technical/performance-tuning-of-ceph-rbd.html)
 
