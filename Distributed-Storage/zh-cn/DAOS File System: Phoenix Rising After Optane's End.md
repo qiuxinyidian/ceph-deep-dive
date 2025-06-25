@@ -2,7 +2,7 @@
 
 因为看到DAOS项目在IO500上的屠榜，所以一直对这个项目保持着关注(未深入)。
 
-![IO500](https://path-to-io500-image)
+![image.png|IO500](../../image/io500.png)
 
 ## 背景
 
@@ -17,7 +17,7 @@ Optane的停产确实对DAOS产生了不小影响，尤其是在元数据加速�
 - **引入写前日志机制（WAL）**：通过将日志写入DRAM并同步到NVMe SSD，以替代原本依赖PMem的低延迟持久化路径
 - **持续优化NVMe访问路径**：使在没有Optane的环境下也能维持高IOPS和低延迟
 
-![DAOS架构改变](https://path-to-architecture-image)
+![image.png|IO500](../../image/daos01.png)
 
 ## 开源社区的力量：从Intel主导到基金会治理
 
@@ -31,15 +31,11 @@ Optane的停产确实对DAOS产生了不小影响，尤其是在元数据加速�
 
 ### 开源指标：DAOS vs. Ceph
 
-| 指标 | DAOS | Ceph |
-|------|------|------|
-| Stars | ![star & commits & issues](https://path-to-comparison-image) | - |
-| Commits | - | - |
-| Issues | - | - |
+![image.png|IO500](../../image/star.png)
 
-### 研发主要公司
 
-![研发主要公司](https://path-to-companies-image)
+![image.png|IO500](../../image/company.png)
+
 
 ## 面向未来：2.8版与3.0路线图
 
@@ -50,7 +46,7 @@ Optane的停产确实对DAOS产生了不小影响，尤其是在元数据加速�
 - **DAOS 2.8版本**（2025年底）：这是从Intel主导转为社区主导的第一个Release版本，持续增强NVMe适配、元数据引擎与K8s云原生支持
 - **DAOS 3.0版本**（预计2026年）：将带来更彻底的模块化设计，强化与AI和容器生态的集成
 
-![DAOS Roadmap](https://path-to-roadmap-image)
+![image.png|IO500](../../image/roadmap.png)
 
 ## DAOS典型用户案例
 
