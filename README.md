@@ -48,6 +48,7 @@
 
 ####  🛠️ performance tune
 
+* [Ceph Tentacle Erasure Coding Enhancements](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Distributed-Storage/en/Ceph%20Tentacle%20Erasure%20Coding%20Enhancements.md)
 * [Ceph: A Journey to 1 TiB/s](https://ceph.io/en/news/blog/2024/ceph-a-journey-to-1tibps/)
 
 * [performance tuning of ceph rbd](https://www.intel.com/content/www/us/en/developer/articles/technical/performance-tuning-of-ceph-rbd.html)
