@@ -129,10 +129,16 @@ These improvements make Erasure Coded pools a compelling storage solution that a
 
 ## References
 
-1. Scales, B., & Ainscow, A. (2025). *Erasure Coding Enhancements for Tentacle*. Ceph Day London 2025. Retrieved from https://ceph.io/assets/pdfs/events/2025/ceph-day-london/04%20Erasure%20Coding%20Enhancements%20for%20Tentacle.pdf
+1. Reddit Community Discussion. (2024). *Massive EC improvements with Tentacle release*. r/ceph. Retrieved from https://www.reddit.com/r/ceph/comments/1lj1fns/massive_ec_improvements_with_tentacle_release/
 
-2. Ceph Development Team. (2024). *Ceph London 2024: Erasure Coding Optimizations*. [Video presentation]. https://youtu.be/bwcntmYP7ic
+2. Scales, B., & Ainscow, A. (2025). *Erasure Coding Enhancements for Tentacle*. Ceph Day London 2025. Retrieved from https://ceph.io/assets/pdfs/events/2025/ceph-day-london/04%20Erasure%20Coding%20Enhancements%20for%20Tentacle.pdf
 
-3. Ceph Documentation. (2025). *Ceph Storage Cluster Configuration Reference*. Retrieved from https://docs.ceph.com/
+3. Ceph Development Team. (2024). *Ceph London 2024: Erasure Coding Optimizations*. [Video presentation]. https://youtu.be/bwcntmYP7ic
 
-4. Bailey, J. (Contributing author). Deep Scrub enhancement algorithms and CRC mathematics implementation for Ceph Tentacle EC optimizations.
+4. Ceph Documentation. (2025). *Ceph Storage Cluster Configuration Reference*. Retrieved from https://docs.ceph.com/
+
+5. Bailey, J. (Contributing author). Deep Scrub enhancement algorithms and CRC mathematics implementation for Ceph Tentacle EC optimizations.
+
+---
+
+*Note: This document was compiled for the ceph-deep-dive GitHub knowledge repository, based on community discussions and official Ceph documentation.*
