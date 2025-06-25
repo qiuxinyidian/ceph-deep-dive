@@ -96,6 +96,7 @@
 
 * [From.deepseek-3FS.to.AI.Storage](https://github.com/wuhongsong/Ceph-Learn-Notes/blob/main/Distributed-Storage/en/From.deepseek-3FS.to.AI.Storage.md)
 * [linux kernel docs](https://lwn.net/Kernel/Index/)
+* [DAOS File System: Phoenix Rising After Optane's End.md](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Distributed-Storage/en/DAOS%20File%20System:%20Phoenix%20Rising%20After%20Optane's%20End.md)
 
 * Ceph vs. JuiceFS vs. Alluxio vs. CubeFS vs Daos vs. ?
 
