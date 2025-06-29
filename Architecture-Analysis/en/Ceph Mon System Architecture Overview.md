@@ -336,29 +336,6 @@ sequenceDiagram
     MON->>MDS: Rank Reassignment
 ```
 
-### Monitor-Client Interaction
-
-**Client Interaction Flow**:
-```mermaid
-graph LR
-    subgraph "Client-Monitor Interaction"
-        A[Client Application] --> B[librados/librbd]
-        B --> C[Monitor Connection]
-        C --> D[Authentication]
-        D --> E[Map Retrieval]
-        E --> F[Direct OSD Access]
-        
-        G[Monitor Updates] --> H[Map Refresh]
-        H --> I[Connection Rebalancing]
-    end
-```
-
-**Interaction Characteristics**:
-- **Initial Connection**: Clients first connect to Monitor to obtain cluster mapping
-- **Authentication Process**: Complete identity verification through CephX protocol
-- **Map Retrieval**: Download necessary information like OSD Map, CRUSH Map
-- **Direct I/O**: Subsequent data operations communicate directly with OSDs
-- **Status Synchronization**: Periodically update cluster mapping information
 
 ---
 
