@@ -336,28 +336,4 @@ sequenceDiagram
     MON->>MDS: Rank Reassignment
 ```
 
-### Monitor-Client交互
 
-**客户端交互流程**：
-```mermaid
-graph LR
-    subgraph "Client-Monitor Interaction"
-        A[Client Application] --> B[librados/librbd]
-        B --> C[Monitor Connection]
-        C --> D[Authentication]
-        D --> E[Map Retrieval]
-        E --> F[Direct OSD Access]
-        
-        G[Monitor Updates] --> H[Map Refresh]
-        H --> I[Connection Rebalancing]
-    end
-```
-
-**交互特点**：
-- **初始连接**：客户端首先连接Monitor获取集群映射
-- **认证过程**：通过CephX协议完成身份验证
-- **映射获取**：下载OSD Map、CRUSH Map等必要信息
-- **直接I/O**：后续数据操作直接与OSD通信
-- **状态同步**：定期更新集群映射信息
-
----
