@@ -53,7 +53,7 @@
 
 * [performance tuning of ceph rbd](https://www.intel.com/content/www/us/en/developer/articles/technical/performance-tuning-of-ceph-rbd.html)
 
-* [Designing and Tuning for All-Flash Ceph RBD Storage](Application-Practice/Ceph-Days-NYC-2024-Designing-and-Tuning-for-All-Flash-Ceph RBD-Storage.pdf)
+* [Designing and Tuning for All-Flash Ceph RBD Storage](Application-Practice/en/Ceph-Days-NYC-2024-Designing-and-Tuning-for-All-Flash-Ceph-RBD-Storage.pdf)
   
 #### 🛠️ [Operation and maintenance skills](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Operation-Skills)
 
