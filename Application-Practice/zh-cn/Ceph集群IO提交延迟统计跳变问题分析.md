@@ -1,4 +1,11 @@
-# Ceph集群IO提交延迟统计跳变问题分析
+
+---
+title: "Ceph集群IO提交延迟统计跳变问题分析"
+date: 2025-06-10T15:17:59+08:00
+draft: false
+tags: ["ceph"]
+categories: ["ceph"]
+---
 
 ## 问题现象
 - **环境**：Ceph集群节点异常重启后
