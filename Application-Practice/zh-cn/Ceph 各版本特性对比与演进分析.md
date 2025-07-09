@@ -1,6 +1,6 @@
 # Ceph 各版本特性对比与演进分析
 
-本文档详细分析了Ceph从Nautilus (v14)到最新Squid (v19)版本的主要特性演进，为选择合适版本和制定升级策略提供参考。
+本文档详细分析了Ceph从Nautilus (v14)到最新Squid (v19)版本的主要特性演进，为选择合适版本和制定升级策略提供参考。(在LLM的帮助下整理)
 
 ## 版本概览
 
@@ -16,6 +16,44 @@
 ---
 
 ## 版本特性对比总结
+
+### 成熟度驱动的版本选择指南
+
+
+| 特性 | Nautilus | Octopus | Pacific | Quincy | Reef | Squid |
+|------|----------|---------|---------|---------|------|-------|
+| **部署方式** | ceph-deploy | **cephadm引入** | cephadm | cephadm成熟 | cephadm | cephadm | 云原生 |
+| **存储引擎** | BlueStore | BlueStore | BlueStore | BlueStore | **FileStore移除** | BlueStore优化 | **Crimson** |
+| **配置管理** | **集中化引入** | 集中化 | 集中化 | 集中化 | 集中化 | 集中化 | 智能化 |
+| **网络协议** | **msgr2引入** | msgr2稳定 | msgr2 | msgr2 | msgr2 | msgr2 | **msgr3** |
+| **PG管理** | **autoscale引入** | autoscale | autoscale | autoscale | autoscale | autoscale | 智能化 |
+| **调度器** | 传统 | 改进 | **mclock引入** | **mclock默认** | mclock | mclock优化 | AI调度 |
+| **CephFS多FS** | **首次支持** | 功能增强 | **镜像完善** | 管理优化 | 管理优化 | Dashboard集成 | 原生多租户 |
+| **多站点** | 基础 | **RBD镜像** | **CephFS镜像** | 完善 | 增强 | 增强 | 原生 |
+| **Dashboard** | 基础 | 改进 | 改进 | 改进 | **重构** | **重构** | 智能 |
+| **容器化** | 无 | **cephadm预览** | **cephadm成熟** | cephadm完整 | cephadm | cephadm | 原生 |
+
+#### 特性成熟度标记说明
+- **加粗文字**: 该版本中特性的重要节点（首次引入/达到稳定/重大改进）
+- 普通文字: 特性在该版本中保持稳定或有小幅改进
+- 斜体文字: 特性在该版本中被弃用或准备移除
+
+### 特性驱动的版本选择指南
+
+
+| 所需特性 | 最低版本 | 稳定推荐版本 | 备注 |
+|----------|----------|--------------|------|
+| 中心化配置管理 | Nautilus | Octopus+ | 基础功能可用，建议升级获得稳定性 |
+| PG autoscaling | Nautilus | Pacific+ | 生产环境建议手动控制 |
+| msgr2安全协议 | Nautilus | Octopus+ | 新部署建议直接使用 |
+| cephadm容器化管理 | Octopus | Pacific+ | 技术预览→生产可用 |
+| CephFS多文件系统 | Nautilus | Pacific+ | 基础支持→生产可用 |
+| CephFS镜像/灾备 | Octopus | Pacific+ | 功能引入→生产稳定 |
+| mclock QoS调度 | Pacific | Quincy+ | 引入→默认启用 |
+| 完全容器化部署 | Pacific | Quincy+ | 基础支持→完整生态 |
+| 高级Dashboard | Reef | Squid+ | 重构→完善 |
+| FileStore替换 | 任意版本 | Reef+ | Reef后FileStore不再支持 |
+
 
 ## 特性首次引入与成熟度分析
 
@@ -61,48 +99,6 @@
   - **性能优化**: Nautilus (v14.x) - bitmap allocator，大幅性能提升
   - **完全成熟**: Pacific (v16.x) - 性能和稳定性达到最佳
   - **FileStore淘汰**: Reef (v18.x) - FileStore完全移除支持
-
-
-
-### 关键特性对比矩阵
-
-#### 主要特性演进对比
-
-| 特性 | Nautilus | Octopus | Pacific | Quincy | Reef | Squid |
-|------|----------|---------|---------|---------|------|-------|
-| **部署方式** | ceph-deploy | **cephadm引入** | cephadm | cephadm成熟 | cephadm | cephadm | 云原生 |
-| **存储引擎** | BlueStore | BlueStore | BlueStore | BlueStore | **FileStore移除** | BlueStore优化 | **Crimson** |
-| **配置管理** | **集中化引入** | 集中化 | 集中化 | 集中化 | 集中化 | 集中化 | 智能化 |
-| **网络协议** | **msgr2引入** | msgr2稳定 | msgr2 | msgr2 | msgr2 | msgr2 | **msgr3** |
-| **PG管理** | **autoscale引入** | autoscale | autoscale | autoscale | autoscale | autoscale | 智能化 |
-| **调度器** | 传统 | 改进 | **mclock引入** | **mclock默认** | mclock | mclock优化 | AI调度 |
-| **CephFS多FS** | **首次支持** | 功能增强 | **镜像完善** | 管理优化 | 管理优化 | Dashboard集成 | 原生多租户 |
-| **多站点** | 基础 | **RBD镜像** | **CephFS镜像** | 完善 | 增强 | 增强 | 原生 |
-| **Dashboard** | 基础 | 改进 | 改进 | 改进 | **重构** | **重构** | 智能 |
-| **容器化** | 无 | **cephadm预览** | **cephadm成熟** | cephadm完整 | cephadm | cephadm | 原生 |
-
-#### 特性成熟度标记说明
-- **加粗文字**: 该版本中特性的重要节点（首次引入/达到稳定/重大改进）
-- 普通文字: 特性在该版本中保持稳定或有小幅改进
-- 斜体文字: 特性在该版本中被弃用或准备移除
-
-### 特性驱动的版本选择指南
-
-#### 基于关键特性的版本选择
-
-
-| 所需特性 | 最低版本 | 稳定推荐版本 | 备注 |
-|----------|----------|--------------|------|
-| 中心化配置管理 | Nautilus | Octopus+ | 基础功能可用，建议升级获得稳定性 |
-| PG autoscaling | Nautilus | Pacific+ | 生产环境建议手动控制 |
-| msgr2安全协议 | Nautilus | Octopus+ | 新部署建议直接使用 |
-| cephadm容器化管理 | Octopus | Pacific+ | 技术预览→生产可用 |
-| CephFS多文件系统 | Nautilus | Pacific+ | 基础支持→生产可用 |
-| CephFS镜像/灾备 | Octopus | Pacific+ | 功能引入→生产稳定 |
-| mclock QoS调度 | Pacific | Quincy+ | 引入→默认启用 |
-| 完全容器化部署 | Pacific | Quincy+ | 基础支持→完整生态 |
-| 高级Dashboard | Reef | Squid+ | 重构→完善 |
-| FileStore替换 | 任意版本 | Reef+ | Reef后FileStore不再支持 |
 
 
 
@@ -614,3 +610,9 @@ Squid是Ceph的第19个稳定版本，是当前活跃的稳定版本。
 - Ceph Tech Talk - What's New In Octopus
 - Ceph Developer Summit Quincy: RADOS Follow-up
 - Diving Deep with Squid
+
+
+
+## 特别说明
+
+本文仅供参考，如果有错误的地方，请指正
