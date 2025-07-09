@@ -24,7 +24,8 @@
 
 ### 💡Ceph History
 
-- [Detail: Ceph Release：The evolution history ]()
+- [Detail: Ceph Release：The evolution history ](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Application-Practice/en/Ten%20Years%20of%20Ceph%3A%20The%20Evolution%20Journey%20from%20Nautilus%20to%20Squid.md)
+  - [Ten Years of Ceph: The Evolution Journey from Nautilus to Squid](https://github.com/wuhongsong/ceph-deep-dive/blob/main/Application-Practice/en/Ten%20Years%20of%20Ceph%3A%20The%20Evolution%20Journey%20from%20Nautilus%20to%20Squid.md)
   - [Tentacle](https://ceph.io/assets/pdfs/events/2025/ceph-day-london/02%20Ceph%20Day%20London%20Keynote%20-%20State%20of%20Ceph.pdf)
   - [Squid](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/Diving%20Deep%20with%20Squid.pdf)
   - [reef]
