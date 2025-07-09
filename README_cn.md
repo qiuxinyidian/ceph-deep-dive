@@ -39,6 +39,11 @@
 - [DigitalOcean](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/2024%20Ceph%20Day%20NYC%20How%20we%20Operate%20Ceph%20at%20Scale.pdf)
 - [45Drives](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/45Drives%20-Ceph%20Days%202024%20-%20FINAL.pdf)
 - [彭博社](https://static.sched.com/hosted_files/ceph2023/2e/Cephalocon%202023%20-%20multisite.pdf?_gl=1*4b8rzs*_gcl_au*MTk4MTIxMDc0NS4xNzI5NTYzMDEw*FPAU*MTk4MTIxMDc0NS4xNzI5NTYzMDEw)
+- [walmart](https://ceph.io/assets/pdfs/events/2025/ceph-days-silicon-valley/05%20-%20Pavan%20Anton%20-%20Walmart%20Ceph%20Days%202025%20Presentation.pdf)
+- [etraveli group](https://static.sched.com/hosted_files/ceph2024/0a/Etraveli%20Group%20Presentation%20_%20Cephalocon2024.pdf)
+- [UKRI](https://ceph.io/assets/pdfs/events/2025/ceph-day-london/07%20LT%20Learning%20opportunities%20from%20a%20100PB%20Ceph.pdf)
+- [proton](https://static.sched.com/hosted_files/ceph2024/10/proton_jan_luis.pdf)
+- [Nordic AB: Ceph(FS) Operations Retrospective](https://static.sched.com/hosted_files/ceph2024/b4/Cephalocon2024_CephFS_Operations_Retrospective.pdf)
 -  更多稍后更新，非常欢迎您的贡献
 
 ####  🛠️ 性能优化
