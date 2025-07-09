@@ -19,19 +19,18 @@
 
 ### 成熟度驱动的版本选择指南
 
-
 | 特性 | Nautilus | Octopus | Pacific | Quincy | Reef | Squid |
 |------|----------|---------|---------|---------|------|-------|
-| **部署方式** | ceph-deploy | **cephadm引入** | cephadm | cephadm成熟 | cephadm | cephadm | 云原生 |
-| **存储引擎** | BlueStore | BlueStore | BlueStore | BlueStore | **FileStore移除** | BlueStore优化 | **Crimson** |
-| **配置管理** | **集中化引入** | 集中化 | 集中化 | 集中化 | 集中化 | 集中化 | 智能化 |
-| **网络协议** | **msgr2引入** | msgr2稳定 | msgr2 | msgr2 | msgr2 | msgr2 | **msgr3** |
-| **PG管理** | **autoscale引入** | autoscale | autoscale | autoscale | autoscale | autoscale | 智能化 |
-| **调度器** | 传统 | 改进 | **mclock引入** | **mclock默认** | mclock | mclock优化 | AI调度 |
-| **CephFS多FS** | **首次支持** | 功能增强 | **镜像完善** | 管理优化 | 管理优化 | Dashboard集成 | 原生多租户 |
-| **多站点** | 基础 | **RBD镜像** | **CephFS镜像** | 完善 | 增强 | 增强 | 原生 |
-| **Dashboard** | 基础 | 改进 | 改进 | 改进 | **重构** | **重构** | 智能 |
-| **容器化** | 无 | **cephadm预览** | **cephadm成熟** | cephadm完整 | cephadm | cephadm | 原生 |
+| **部署方式** | ceph-deploy | **cephadm引入** | cephadm | cephadm成熟 | cephadm | cephadm |
+| **存储引擎** | BlueStore | BlueStore | BlueStore | BlueStore | **FileStore移除** | BlueStore优化 |
+| **配置管理** | **集中化引入** | 集中化 | 集中化 | 集中化 | 集中化 | 集中化 |
+| **网络协议** | **msgr2引入** | msgr2稳定 | msgr2 | msgr2 | msgr2 | msgr2 |
+| **PG管理** | **autoscale引入** | autoscale | autoscale | autoscale | autoscale | autoscale |
+| **调度器** | 传统 | 改进 | **mclock引入** | **mclock默认** | mclock | mclock优化 |
+| **CephFS多FS** | **首次支持** | 功能增强 | **镜像完善** | 管理优化 | 管理优化 | Dashboard集成 |
+| **多站点** | 基础 | **RBD镜像** | **CephFS镜像** | 完善 | 增强 | 增强 |
+| **Dashboard** | 基础 | 改进 | 改进 | 改进 | **重构** | **重构** |
+| **容器化** | 无 | **cephadm预览** | **cephadm成熟** | cephadm完整 | cephadm | cephadm |
 
 #### 特性成熟度标记说明
 - **加粗文字**: 该版本中特性的重要节点（首次引入/达到稳定/重大改进）
@@ -95,10 +94,15 @@
 
 #### 存储引擎发展
 - **BlueStore成熟化**
-  - **默认引擎**: Luminous (v12.x) - 替代FileStore成为默认
+  - **默认引擎**: Mimic (v13.x) - BlueStore替代FileStore成为默认存储引擎
   - **性能优化**: Nautilus (v14.x) - bitmap allocator，大幅性能提升
   - **完全成熟**: Pacific (v16.x) - 性能和稳定性达到最佳
   - **FileStore淘汰**: Reef (v18.x) - FileStore完全移除支持
+
+- **Crimson/Seastore (下一代)**
+  - **技术预览**: Quincy (v17.x) - 实验性功能
+  - **功能增强**: Squid (v19.x) - 支持RBD工作负载
+  - **预期成熟**: 未来版本 - 生产环境可用
 
 
 
