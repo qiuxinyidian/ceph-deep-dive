@@ -24,6 +24,14 @@
 
 ### 💡Ceph History
 
+- [Detail: Ceph Release：The evolution history ]()
+  - [Tentacle](https://ceph.io/assets/pdfs/events/2025/ceph-day-london/02%20Ceph%20Day%20London%20Keynote%20-%20State%20of%20Ceph.pdf)
+  - [Squid](https://ceph.io/assets/pdfs/events/2024/ceph-days-nyc/Diving%20Deep%20with%20Squid.pdf)
+  - [reef]
+  - [Quincy](https://42on.com/ceph-quincy-a-look-into-the-future/)
+- [Ceph RBD Turns 15: A Story of Open Source Creation](https://www.infoq.com/articles/ceph-rbd-open-source/)
+- [Ceph: 20 Years of Cutting-Edge Storage at the Edge](https://thenewstack.io/ceph-20-years-of-cutting-edge-storage-at-the-edge/)
+- [Ceph：The Linux Of Storage Today](https://www.snia.org/sites/default/files/CSI/Ceph-The-Linux-of-Storage-Today.pdf)
 
 ### 🏗️ [Architecture Analysis](https://github.com/wuhongsong/ceph-deep-dive/tree/main/Architecture-Analysis)
 
